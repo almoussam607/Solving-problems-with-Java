@@ -1,4 +1,4 @@
-package Problem_Solving;
+package Warmup_1;
 
 public class SleepIn {
     public static void main(String[] args) {
