@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 public class Fibonacci {
 
+    // 0 1 1 2 3 5 8
+    // 0 1 2 3 4 5 6
+
 
     public static int fib(int n){
 
@@ -11,6 +14,9 @@ public class Fibonacci {
             return n;
         }
             return (fib(n -2) + fib(n-1));
+
+
+
 
     }
     public static void main(String[] args) {
