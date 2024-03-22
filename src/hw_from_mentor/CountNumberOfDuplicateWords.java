@@ -3,19 +3,18 @@ package hw_from_mentor;
 import java.util.HashMap;
 import java.util.Map;
 
-public class FindDubplicateWordsInString {
+public class CountNumberOfDuplicateWords {
     public static void main(String[] args) {
+        /* This program counts the number of duplicate words in a given string.
+    It tokenizes the text into words and then tracks how many times each word appears using a map.*/
 
-    /*This program finds duplicate words in a given string.
-    It tokenizes the string into words and then tracks the count of each word using a map.
-    Words with a count greater than one are identified as duplicates.*/
 
         HashMap<String, Integer> hm = new HashMap<>();
 
         String str = "Coding is not bad coding is fun.";
 
 
-      String [] strArray = str.replaceAll("\\p{Punct}", "").toLowerCase().split(" ");
+        String [] strArray = str.replaceAll("\\p{Punct}", "").toLowerCase().split(" ");
 
         System.out.println(strArray[0]);
 
@@ -30,12 +29,10 @@ public class FindDubplicateWordsInString {
         System.out.println(hm);
 
         for (Map.Entry<String, Integer> enter: hm.entrySet()){
-            if (enter.getValue() > 1){
-                System.out.println("There are " + enter.getValue() + " times of " + enter.getKey());
-            }
+                System.out.println(enter.getKey() + " => " + enter.getValue());
+
+
         }
-
-
 
 
 
